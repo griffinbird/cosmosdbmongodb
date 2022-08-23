@@ -1,6 +1,6 @@
 import { Router } from "express"
-import MoviesCtrl from "./movies.controller"
-import CommentsCtrl from "./comments.controller"
+import MoviesCtrl from "./movies.controller.js"
+import CommentsCtrl from "./comments.controller.js"
 
 const router = new Router()
 

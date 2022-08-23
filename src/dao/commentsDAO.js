@@ -1,4 +1,5 @@
-import { ObjectId } from "bson"
+import pkg from 'bson';
+const { ObjectId } = pkg;
 
 let comments
 

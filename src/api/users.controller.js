@@ -1,6 +1,6 @@
 import bcrypt from "bcryptjs"
 import jwt from "jsonwebtoken"
-import UsersDAO from "../dao/usersDAO"
+import UsersDAO from "../dao/usersDAO.js"
 
 const hashPassword = async password => await bcrypt.hash(password, 10)
 

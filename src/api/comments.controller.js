@@ -1,8 +1,9 @@
-import UsersDAO from "../dao/usersDAO"
-import CommentsDAO from "../dao/commentsDAO"
-import MoviesDAO from "../dao/moviesDAO"
-import { User } from "./users.controller"
-import { ObjectId } from "bson"
+import UsersDAO from "../dao/usersDAO.js"
+import CommentsDAO from "../dao/commentsDAO.js"
+import MoviesDAO from "../dao/moviesDAO.js"
+import { User } from "./users.controller.js"
+import pkg from 'bson';
+const { ObjectId } = pkg;
 
 export default class CommentsController {
   static async apiPostComment(req, res, next) {

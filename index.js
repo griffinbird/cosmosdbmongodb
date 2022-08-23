@@ -1,4 +1,5 @@
-require("@babel/register")
-require("dotenv").config()
+import connect from "./src/index.js"
+import * as dotenv from 'dotenv'
 
-exports = module.exports = require("./src")
+dotenv.config()
+connect();
