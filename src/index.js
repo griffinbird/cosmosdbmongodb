@@ -5,7 +5,7 @@ import CommentsDAO from "./dao/commentsDAO.js"
 import pkg from 'mongodb';
 const { MongoClient } = pkg;
 
-const port = process.env.PORT || 8000
+
 
 /**
 Ticket: Connection Pooling
@@ -21,6 +21,7 @@ Please prevent the program from waiting indefinitely by setting the write
 concern timeout limit to 2500 milliseconds.
 */
 export default function connect() {
+  const port = process.env.PORT || 8000
   MongoClient.connect(
     process.env.MFLIX_DB_URI,
     // TODO: Connection Pooling
